@@ -145,7 +145,7 @@ for arquivo in os.listdir(diretorio):
                     else:
                         novo_dado = pd.DataFrame({'Empresa': [nome_empresa], 'Saldo Inicial': 0.0})
                         df_padrao = pd.concat([df_padrao, novo_dado], ignore_index=True)
-                        # print(Fore.RED + f"Nenhum valor numérico encontrado na coluna O para {nome_empresa}." + Fore.RESET)
+                        # print(Fore.RED + f"Nenhum valor numérico encontrado na coluna O para {nome_empresa}." + Fore.RESET)aaaa
                 else:
                     # Verifica a regra de datas_antes
                     datas_antes = sorted([data for data in datas_iguais if datetime.datetime.strptime(data, '%d/%m/%y').date() <= data_limite], reverse=True)
